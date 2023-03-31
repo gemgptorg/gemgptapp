@@ -10,14 +10,12 @@ function App({ Component, pageProps }: AppProps) {
   const Layout = getLayout<LayoutProps>(Component)
 
   return (
-    <Layout
-      title="ai-chatgpt"
-      path="solutions/ai-chatgpt"
-      description="ai-chatgpt"
+    <div className='bg-[#00122B] w-full h-full'
+     
     >
       <Component {...pageProps} />
       <Analytics />
-    </Layout>
+    </div>
   )
 }
 
